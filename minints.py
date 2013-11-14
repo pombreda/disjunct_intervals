@@ -64,7 +64,7 @@ def gen_disjunct_intervals_CSP(ints):
         for i in sizeL:
             values += [
                 item
-                for item in it.combinations(ints, i+1) if key in item
+                for item in it.combinations(ints, i + 1) if key in item
             ]
         p.addVariable(intnum, values)
 
